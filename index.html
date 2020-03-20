@@ -6,13 +6,25 @@
   <title>ComputedProp-WatcherProp</title>
 </head>
 <body>
-  <h1>ComputedProp-WatcherProp</h1>
-  <h2>
-    Computed Prop
-  </h2>
-  <h2>
-    Watcher Prop
-  </h2>
+  <div id="app">
+    <h1>ComputedProp-WatcherProp</h1>
+    <h2>
+      Computed Prop
+    </h2>
+    <p>
+      firstName : <input type="text" v-model:value="firstName">
+    </p>
+    <p>
+      lastName: <input type="text" v-model:value="lastName">
+    </p>
+    <p>
+      fullName: {{ fullName }}
+    </p>
+    <h2>
+      Watcher Prop
+    </h2>
+
+  </div>
 <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
 <script src="js/main.js"></script>
 </body>
